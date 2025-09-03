@@ -145,3 +145,28 @@ class animal {
 const animal1 = new animal("dog", "bark")
 animal1.greet()
 
+//promises
+fetch("https://jsonplaceholder.typicode.com/posts/1")
+  .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.error(error);
+  });
+
+// string .includes method
+let text = "Hello world, welcome to the universe.";
+console.log(text.includes("world")); 
+
+// string .startsWith method
+let text2 = "Hello world, welcome to the universe.";
+console.log(text2.startsWith("Hello"))
+
+//string .endsWith method
+let text3 = "Iam ankita"
+console.log(text3.endsWith("ankita"))
+
+
