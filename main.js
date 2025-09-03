@@ -144,3 +144,4 @@ class animal {
 //objects
 const animal1 = new animal("dog", "bark")
 animal1.greet()
+
